@@ -1,6 +1,9 @@
 import globals from 'globals'
 import typescriptPlugin from '@typescript-eslint/eslint-plugin' // TypeScript ESLint plugin
 import typescriptParser from '@typescript-eslint/parser' // TypeScript parser
+import path from 'path'
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 export default [
   // Configuration for JavaScript and TypeScript files
@@ -13,6 +16,9 @@ export default [
       },
       parser: typescriptParser,
       parserOptions: {
+        tsconfigRootDir: __dirname,
+        sourceType: 'module',
+        ecmaVersion: 'latest',
         project: './tsconfig.json', // Ensure TypeScript checks are performed according to tsconfig.json
       },
     },
