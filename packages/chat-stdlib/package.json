@@ -8,5 +8,9 @@
     "build": "yarn tsc",
     "lint": "yarn eslint src --ext js,ts",
     "test": "yarn jest"
+  },
+  "volta": {
+    "node": "20.15.0",
+    "yarn": "3.8.3"
   }
 }
