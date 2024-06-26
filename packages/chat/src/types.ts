@@ -3,7 +3,7 @@
  */
 export interface IUser {
   id: number;
-  username: string;
+  username?: string;
   name: string;
   iconUrl: string;
 }
@@ -41,5 +41,3 @@ export interface IChannel {
   id: string;
   messages: IMessage[];
 }
-
-type ChannelNameAndId = Pick<IChannel, 'name' | 'id'>;

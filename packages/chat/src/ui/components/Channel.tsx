@@ -7,7 +7,7 @@ import ChannelMessage from './Channel/Message'
 import Loading from './Loading'
 import { IChannel, IMessage } from '../../types'
 
-const Channel: React.FC<{ channel: IChannel }> = ({ channel }) => {
+const Channel: React.FC<{ channel: Pick<IChannel, 'name' | 'description' | 'teamId' | 'id'> }> = ({ channel }) => {
 
   const [messages, setMessages] = React.useState<IMessage[]>()
   useAsyncDataEffect(

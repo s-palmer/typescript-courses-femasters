@@ -2,7 +2,7 @@ import * as React from 'react'
 import { formatTimestamp } from '../../../utils/date.cjs'
 import { IMessage } from '../../../types'
 
-const Message: React.FC<IMessage> = ({ user, createdAt, body }) => {
+const Message: React.FC<Pick<IMessage, 'user' | 'createdAt' | 'body'>> = ({ user, createdAt, body }) => {
   const date = new Date(createdAt)
 
   return (
