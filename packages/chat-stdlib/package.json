@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "build": "yarn tsc",
-    "lint": "yarn eslint src --ext js,ts",
+    "lint": "yarn eslint src/",
     "test": "yarn jest"
   },
   "volta": {
@@ -14,6 +14,13 @@
     "yarn": "3.8.3"
   },
   "devDependencies": {
-    "typescript": "~5.3.0"
+    "@eslint/js": "^9.5.0",
+    "@types/eslint": "^8",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "9.x",
+    "globals": "^15.6.0",
+    "typescript": "~5.3.0",
+    "typescript-eslint": "^7.14.1"
   }
 }
