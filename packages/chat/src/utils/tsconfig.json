@@ -2,6 +2,8 @@
   "extends": ["../../tsconfig.json"],
   "compilerOptions": {
     "noImplicitAny": true,
+    "exactOptionalPropertyTypes": true,
+    "strictNullChecks": true
   },
   "include": ["."]
 }
