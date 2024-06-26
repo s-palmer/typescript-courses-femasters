@@ -7,7 +7,7 @@
   "scripts": {
     "build": "yarn tsc",
     "lint": "yarn eslint src/",
-    "test": "yarn jest"
+    "test": "yarn build && yarn jest"
   },
   "volta": {
     "node": "20.15.0",
