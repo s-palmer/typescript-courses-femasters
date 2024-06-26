@@ -38,9 +38,9 @@ export default [
       jest: true,
     },
   },
-  // Override for .eslintrc.js file itself
+  // Override for eslint.config.mjs file itself
   {
-    files: ['.eslintrc.js'],
+    files: ['eslint.config.mjs'],
     extends: ['plugin:@typescript-eslint/disable-type-checked'],
     rules: {
       '@typescript-eslint/no-unsafe-assignment': 'off',
