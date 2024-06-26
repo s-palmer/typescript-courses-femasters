@@ -35,9 +35,8 @@ describe('Utils - stringifyError', () => {
   it('should stringify an Error instance correctly', () => {
     const errorDescription = 'Test Error'
     const testError = new Error('This is a test error')
-    const expectedString = `${errorDescription}\n${testError.name.toUpperCase()}: ${
-      testError.message
-    }\n${testError.stack}`
+    const expectedString = `${errorDescription}\n${testError.name.toUpperCase()}: ${testError.message
+      }\n${testError.stack}`
 
     const result = stringifyError(testError, errorDescription)
 
@@ -67,9 +66,8 @@ describe('Utils - stringifyError', () => {
     const errorDescription = 'Test Error'
     const testError = new Error('This is a test error without stack')
     delete testError.stack
-    const expectedString = `${errorDescription}\n${testError.name.toUpperCase()}: ${
-      testError.message
-    }\n(no stack trace information)`
+    const expectedString = `${errorDescription}\n${testError.name.toUpperCase()}: ${testError.message
+      }\n(no stack trace information)`
 
     const result = stringifyError(testError, errorDescription)
 
