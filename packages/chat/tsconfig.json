@@ -16,6 +16,9 @@
       "*": [
         "types/*"
       ],
+      "chat-stdlib": [
+        "../chat-stdlib/dist/chat-stdlib-beta.d.ts"
+      ]
     },
   },
   "include": [

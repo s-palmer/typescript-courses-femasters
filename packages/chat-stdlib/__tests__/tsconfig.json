@@ -7,8 +7,17 @@
     }
   ],
   "compilerOptions": {
-    "types": ["jest"],
-    "rootDir": ".."
+    "types": [
+      "jest"
+    ],
+    "rootDir": "..",
+    "paths": {
+      "chat-stdlib": [
+        "../dist/chat-stdlib-beta.d.ts"
+      ]
+    }
   },
-  "include": ["."]
+  "include": [
+    "."
+  ]
 }
